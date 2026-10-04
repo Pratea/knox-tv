@@ -1,0 +1,9 @@
+helper/node_modules/
+helper/dist/
+helper/*.bin
+java/build/
+# gerados pelo build.ps1 / package-engine.ps1
+mod/KNOXTV/42/media/java/client/KNOXTV.jar
+mod/KNOXTV/42/engine/
+dist/
+workshop/steamcmd_item.vdf

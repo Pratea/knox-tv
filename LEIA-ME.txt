@@ -1,0 +1,59 @@
+KNOX TV -- versao de teste
+============================
+
+TVs com navegador de verdade no Project Zomboid: YouTube e outros sites
+passando nas TVs do jogo e no telao do drive-in de Rosewood, sincronizado
+entre os jogadores no multiplayer. Funciona em 1a pessoa com o Viewpoint.
+
+
+REQUISITOS
+----------
+- Windows 64 bits
+- Project Zomboid Build 42.21
+- ZombieBuddy instalado (mod Java):
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3619862853
+  Assine na Workshop e rode o instalador dele (instrucoes na pagina).
+  Se voce ja usa o Viewpoint, o ZombieBuddy ja esta instalado.
+
+
+INSTALACAO
+----------
+1. Extraia a pasta "KNOXTV" deste .zip para:
+       C:\Users\<seu usuario>\Zomboid\mods\
+   Deve ficar assim:
+       C:\Users\<seu usuario>\Zomboid\mods\KNOXTV\42\mod.info
+2. Abra o jogo e ative "ZombieBuddy" e "KNOX TV" na lista de mods.
+3. O ZombieBuddy vai perguntar se voce aprova o mod Java "KNOXTV":
+   aprove (ele pergunta de novo sempre que o mod for atualizado).
+
+
+COMO USAR
+---------
+- Ligue uma TV, clique com o botao direito nela e escolha
+  "KNOX TV: Assistir".
+- Clique no video pra usar o teclado na pagina (moldura azul).
+  Esc devolve o teclado pro jogo.
+- Quem estiver perto ouve o som (abafado por paredes) e ve o video na tela.
+- Drive-in de Rosewood: botao direito no telao > "Assistir no telao".
+- Pra parar: botao direito na TV/telao > "Parar o video".
+- Controle remoto: o icone de TV embaixo dos icones da esquerda da tela (ou
+  a tecla Insert) abre/fecha o navegador da TV ou telao que voce esta
+  assistindo -- ou do mais proximo -- sem precisar ir ate ele.
+  Tecla e botao: Opcoes > Mods > KNOX TV.
+
+
+MULTIPLAYER
+-----------
+O servidor e todos os jogadores precisam ter EXATAMENTE a mesma versao do
+mod na pasta mods (o jogo confere). No servidor, a parte usada e so Lua.
+Nas configuracoes do servidor, KNOXTV vai em "Mods" e os mods da
+Workshop (ZombieBuddy 3619862853, Viewpoint 3809306528 etc.) precisam do ID
+em "WorkshopItems" -- sem o ID o servidor nao acha o mod.
+Sites permitidos nas TVs: Zomboid\Lua\KNOXTV\allowed_domains.txt no
+servidor (criado na primeira vez que alguem usa uma TV).
+
+
+PROBLEMAS?
+----------
+Mande o arquivo C:\Users\<seu usuario>\Zomboid\console.txt de logo depois
+do problema (as linhas do mod comecam com [KNOX TV]).

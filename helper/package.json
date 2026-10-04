@@ -1,0 +1,14 @@
+{
+  "name": "zomboid-tv-helper",
+  "version": "0.1.0",
+  "description": "Motor de navegador do KNOX TV: renderiza paginas fora da tela e entrega os quadros ao mod Java por memoria compartilhada.",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron . --frames ./test-frames.bin"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^38.0.0"
+  }
+}

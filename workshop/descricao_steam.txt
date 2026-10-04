@@ -1,0 +1,31 @@
+A real web browser on Project Zomboid's TVs! Watch YouTube, Twitch and other sites on in-game TVs and on cinema and drive-in screens, synchronized for every player in multiplayer. Works in first person with Viewpoint.
+
+[h2]Features[/h2]
+[list]
+[*][b]TV with a browser:[/b] turn a TV on, right-click it and choose "KNOX TV: Assistir" (Watch). Browse with mouse and keyboard (search, fullscreen, YouTube shortcuts).
+[*][b]Video on the TV screen:[/b] the picture shows up on the TV itself in the world, including in first person with Viewpoint.
+[*][b]Watch together:[/b] in multiplayer, everyone near the TV sees and hears the same video at the same point. Play, pause, seeking and changing videos are all synchronized.
+[*][b]Realistic sound:[/b] volume drops with distance and is muffled by walls.
+[*][b]Big screens:[/b] the Rosewood drive-in and both theaters of the March Ridge cinema, with the video kept at the right aspect ratio.
+[*][b]Remote control:[/b] the icon on the left sidebar (or the Insert key, configurable) opens the browser for the screen you're watching, without walking up to it.
+[*][b]Compatible with Voxel Studio[/b] (Viewpoint 3D models): TVs keep the default look so the video can be shown.
+[/list]
+
+[h2]Requirements[/h2]
+[list]
+[*]Project Zomboid [b]Build 42.21[/b]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3619862853]ZombieBuddy[/url]: subscribe and run its installer. The first time, and after every update, ZombieBuddy asks you to approve KNOX TV.
+[*][b]Windows 64-bit.[/b] The mod is about 280 MB because of the built-in browser.
+[/list]
+
+[h2]Supported sites[/h2]
+YouTube, Twitch, Vimeo and Dailymotion. DRM-protected services (Crunchyroll, Netflix, Prime Video) won't play.
+
+[h2]Privacy[/h2]
+Logins are stored only on your PC. Login and account pages are never shared with other players: only the video link and its current time are synced.
+
+[h2]Notice: this mod includes a program[/h2]
+The browser is a separate program (KNOXTVEngine.exe, based on Electron/Chromium), included in mods/KNOXTV/42/engine. The mod starts it without a window and receives the picture through shared memory. If the browser crashes, the game keeps running.
+
+[h2]Servers[/h2]
+The server side is Lua only, so it works even on rented servers. Add this item's ID to WorkshopItems and "KNOXTV" to Mods. Sites allowed on TVs are listed in Zomboid/Lua/KNOXTV/allowed_domains.txt, created the first time someone uses a TV.
